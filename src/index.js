@@ -4,16 +4,27 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
+import ErrorPage from './pages/ErrorPage'
+import Logement from './pages/Logement'
+import { getLogement } from './pages/Homepage'
 //import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Homepage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: '/about',
     element: <About />,
+  },
+  {
+    path: '/:logementId',
+    loader: ({ params }) => {
+      return getLogement(params.logementId)
+    },
+    element: <Logement />,
   },
 ])
 

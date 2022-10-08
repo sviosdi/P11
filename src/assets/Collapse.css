@@ -1,0 +1,44 @@
+.collapse {
+    flex-direction: column;
+    margin: 31px 120px;
+}
+
+.collapse>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 5px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.collapse h2 {
+    margin: 0px;
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.collapse img {
+    width: 24px;
+    margin-right: 25px;
+    padding: 10px;
+}
+
+.collapse>div:last-child {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.collapse.expanded>div:last-child {
+    display: block;
+}
+
+.collapse.collapsed>div:last-child {
+    display: none;
+}

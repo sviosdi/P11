@@ -1,13 +1,14 @@
 import '../assets/Thumb.css'
+import { Link } from 'react-router-dom'
 
-const Thumb = ({ title, src, alt }) => {
+const Thumb = ({ id, title, src, alt }) => {
   return (
-    <div className="thumb">
+    <Link to={`/${id}`} className="thumb">
       <img src={src} alt={alt} />
       <div className="thumb-title">
         <h2>{title}</h2>
       </div>
-    </div>
+    </Link>
   )
 }
 

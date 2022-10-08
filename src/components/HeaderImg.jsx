@@ -1,11 +1,11 @@
 import '../assets/HeaderImg.css'
 
-const HeaderImg = ({ background, alt, children }) => {
+const HeaderImg = ({ background, alt, height, children }) => {
   return (
-    <div className="header-img">
-      <img src={background} alt={alt} />
-      <p>{children}</p>
-    </div>
+    <header style={{ height: height }} className="header-img">
+      <img src={background} alt={alt} height={height} />
+      {children && <p>{children}</p>}
+    </header>
   )
 }
 

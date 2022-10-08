@@ -22,3 +22,7 @@ nav>div>a {
     width: 150px;
     text-align: right;
 }
+
+nav>div>a.active {
+    text-decoration: underline;
+}
