@@ -20,6 +20,7 @@
     display: flex;
     gap: 76px;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .precisions .collapse {
@@ -36,9 +37,17 @@
     margin-right: 10px;
 }
 
+.right-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .right-data .owner {
     display: flex;
     align-items: center;
+    margin-top: 25px;
 }
 
 .right-data .owner h2 {
@@ -47,9 +56,21 @@
     align-items: flex-end;
     margin-right: 10px;
     max-width: 100px;
+    line-height: 25px;
 }
 
 .right-data .owner img {
     width: 64px;
     border-radius: 32px;
+}
+
+.collapse .equipments {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.collapse .equipments li {
+    line-height: 25px;
+    margin: 0px;
 }

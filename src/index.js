@@ -13,7 +13,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Homepage />,
-    errorElement: <ErrorPage />,
   },
   {
     path: '/about',
@@ -25,6 +24,7 @@ const router = createBrowserRouter([
       return getLogement(params.logementId)
     },
     element: <Logement />,
+    errorElement: <ErrorPage />,
   },
 ])
 

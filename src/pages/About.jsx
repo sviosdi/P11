@@ -8,11 +8,7 @@ const About = () => {
   return (
     <>
       <HeaderNav active="about" />
-      <HeaderImg
-        background={montagnes}
-        alt="montagnes"
-        height="223px"
-      ></HeaderImg>
+      <HeaderImg background={montagnes} alt="montagnes"></HeaderImg>
       <Collapse
         title="Fiabilité"
         text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

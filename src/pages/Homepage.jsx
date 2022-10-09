@@ -14,7 +14,7 @@ const Homepage = () => {
   return (
     <>
       <HeaderNav active="home" />
-      <HeaderImg background={bordMer} alt="bord de mer" height="223px">
+      <HeaderImg background={bordMer} alt="bord de mer">
         Chez vous, partout et ailleurs
       </HeaderImg>
       <main className="logements">

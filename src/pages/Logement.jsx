@@ -1,30 +1,38 @@
-import HeaderImg from '../components/HeaderImg'
 import { useLoaderData } from 'react-router-dom'
 import HeaderNav from '../components/HeaderNav'
 import '../assets/Logement.css'
 import Collapse from '../components/Collapse'
 import Tag from '../components/Tag'
+import Star from '../components/Star'
+import Gallery from '../components/Gallery'
+import Footer from '../components/Footer'
 
 const Logement = () => {
   const logement = useLoaderData()
+  const names = logement.host.name.split(' ')
+  const rating = Number.parseInt(logement.rating)
+  const pictures = logement.pictures
 
-  let names = logement.host.name.split(' ')
+  const Stars = () => {
+    let stars = []
+    for (let i = 0; i < rating; i++)
+      stars.push(<Star key={'star_' + i} on={true} />)
+    for (let i = rating; i < 5; i++)
+      stars.push(<Star key={'star_' + i} on={false} />)
+    return stars
+  }
 
   return (
     <>
       <HeaderNav />
-      <HeaderImg
-        background={logement.cover}
-        alt={logement.title}
-        height="415px"
-      />
+      <Gallery pictures={pictures} />
       <section className="global-description">
         <div className="logement">
           <h1>{logement.title}</h1>
           <h2>{logement.location}</h2>
           <div className="tags">
-            {logement.tags.map((tag) => {
-              return <Tag>{tag}</Tag>
+            {logement.tags.map((tag, idx) => {
+              return <Tag key={'tag_' + idx}>{tag}</Tag>
             })}
           </div>
         </div>
@@ -36,29 +44,25 @@ const Logement = () => {
             </h2>
             <img src={logement.host.picture} alt="host" />
           </div>
-          <div className="stars"></div>
+          <div className="stars">
+            <Stars />
+          </div>
         </div>
       </section>
       <section className="precisions">
-        <Collapse
-          title="Description"
-          text="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). "
-        />
+        <Collapse title="Description" text={logement.description} />
         <Collapse
           title="Équipements"
           text={
-            <ul>
-              <li>Climatisation</li>
-              <li>Wi-Fi</li>
-              <li>Cuisine</li>
-              <li>Espace de travail</li>
-              <li>Fer à repasser</li>
-              <li>Sèche-cheveux</li>
-              <li>Cintres</li>
+            <ul className="equipments">
+              {logement.equipments.map((e, idx) => (
+                <li key={'equip_' + idx}>{e}</li>
+              ))}
             </ul>
           }
         />
       </section>
+      <Footer />
     </>
   )
 }
