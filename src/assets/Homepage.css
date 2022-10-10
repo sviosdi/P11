@@ -1,9 +1,4 @@
 .logements {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    padding: 56px 50px;
-    background-color: #f6f6f6;
+    display: grid;
     border-radius: 25px;
-    margin-top: 43px;
 }

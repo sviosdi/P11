@@ -14,9 +14,7 @@ const Homepage = () => {
   return (
     <>
       <HeaderNav active="home" />
-      <HeaderImg background={bordMer} alt="bord de mer">
-        Chez vous, partout et ailleurs
-      </HeaderImg>
+      <HeaderImg background={bordMer} alt="bord de mer"></HeaderImg>
       <main className="logements">
         {logements.map((l) => {
           return (

@@ -1,8 +1,3 @@
-.global-description {
-    display: flex;
-    justify-content: space-between;
-}
-
 .global-description h1 {
     color: #ff6060;
     font-size: 36px;
@@ -16,18 +11,6 @@
     font-weight: 500;
 }
 
-.precisions {
-    display: flex;
-    gap: 76px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.precisions .collapse {
-    margin: 0px;
-    width: calc(100% - 76px);
-}
-
 .tags {
     display: flex;
     margin-top: 20px;
@@ -35,13 +18,6 @@
 
 .tag {
     margin-right: 10px;
-}
-
-.right-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 .right-data .owner {

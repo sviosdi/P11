@@ -4,22 +4,17 @@ nav {
     align-items: center;
 }
 
-nav img {
-    height: 68px;
-}
 
 nav>div {
     display: flex;
     justify-content: space-between;
-    width: 320px;
+    margin-top: 10px;
 }
 
 nav>div>a {
     color: #ff6060;
     text-decoration: none;
-    font-size: 24px;
     font-weight: 500;
-    width: 150px;
     text-align: right;
 }
 

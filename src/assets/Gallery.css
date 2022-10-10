@@ -1,10 +1,6 @@
 .gallery {
-    height: 415px;
     width: 100%;
-    border-radius: 25px;
-    margin-top: 60px;
     position: relative;
-
 }
 
 
@@ -17,26 +13,22 @@
     z-index: 1;
 }
 
+
 .gallery .chevron-left {
-    height: 80px;
     position: absolute;
-    left: 24px;
     cursor: pointer;
 }
 
 .gallery .chevron-right {
-    height: 80px;
     position: absolute;
-    right: 24px;
     cursor: pointer;
 }
 
 .gallery .photo {
     position: absolute;
     top: 0px;
-    height: 415px;
+    height: 100%;
     width: 100%;
-    border-radius: 25px;
     object-fit: cover;
 
 }
