@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/P11/static/css/main.058d9db1.css",
-    "main.js": "/P11/static/js/main.ce97abd4.js",
+    "main.js": "/P11/static/js/main.266435d7.js",
     "static/media/montagnes.webp": "/P11/static/media/montagnes.33e797bcb49569d3903d.webp",
     "static/media/header.webp": "/P11/static/media/header.3af525c59ce4bee4b3b9.webp",
     "static/media/logo.svg": "/P11/static/media/logo.bb1c78bdbf97911cf6044e13e0c4f670.svg",
@@ -14,10 +14,10 @@
     "static/media/star-off.svg": "/P11/static/media/star-off.7e4ba6032d7d80ecc30aa389973cef95.svg",
     "static/media/star-on.svg": "/P11/static/media/star-on.6430150c126a3adf92c132c52c9c7428.svg",
     "main.058d9db1.css.map": "/P11/static/css/main.058d9db1.css.map",
-    "main.ce97abd4.js.map": "/P11/static/js/main.ce97abd4.js.map"
+    "main.266435d7.js.map": "/P11/static/js/main.266435d7.js.map"
   },
   "entrypoints": [
     "static/css/main.058d9db1.css",
-    "static/js/main.ce97abd4.js"
+    "static/js/main.266435d7.js"
   ]
 }
