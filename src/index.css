@@ -39,7 +39,7 @@ code {
 
 }
 
-@media all and (min-width: 768px) and (max-width: 1440px) {
+@media all and (min-width: 768px) {
   body {
     margin: 0px auto;
     padding: 30px;
@@ -155,12 +155,30 @@ code {
     margin-top: 15px;
   }
 
+  .right-data .owner img {
+    width: 32px;
+    border-radius: 16px;
+  }
+
+  .collapse {
+    margin: 20px 0px;
+  }
 }
 
 @media all and (min-width: 425px) {
   .logements {
     background-color: #f6f6f6;
   }
+
+  .right-data .owner img {
+    width: 64px;
+    border-radius: 32px;
+  }
+
+  .collapse {
+    margin: 31px 7.5%;
+  }
+
 }
 
 
@@ -192,6 +210,40 @@ code {
     border-radius: 10px;
   }
 
+  .collapse h2 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .error404 h2 {
+    font-size: 18px;
+  }
+
+  .error404 a {
+    font-size: 14px;
+  }
+
+  .collapse>div:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 18px;
+  }
+
+  .collapse>div:first-child {
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .collapse img {
+    width: 15px;
+    padding: 10px;
+  }
+
+  .owner div {
+    line-height: 16px;
+  }
 }
 
 
@@ -205,6 +257,41 @@ code {
   .header-img>img {
     height: 223px;
     border-radius: 25px;
+  }
+
+  .collapse h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .error404 h2 {
+    font-size: 36px;
+  }
+
+  .error404 a {
+    font-size: 18px;
+  }
+
+  .collapse>div:last-child {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px 20px;
+    border-radius: 10px;
+    line-height: 25px;
+  }
+
+  .collapse>div:first-child {
+    height: 52px;
+    border-radius: 10px;
+  }
+
+  .collapse img {
+    width: 26px;
+    padding: 10px;
+  }
+
+  .owner div {
+    line-height: 16px;
   }
 
 }
@@ -247,7 +334,28 @@ code {
     min-width: 200px;
   }
 
+  .right-data .owner {
+    margin-top: 25px;
+  }
 
+}
+
+@media all and (max-width: 425px) {
+  .right-data {
+    margin-top: 10px;
+  }
+}
+
+@media all and (min-width: 425px) and (max-width: 1024px) {
+  .right-data {
+    margin-top: 20px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .right-data {
+    margin-top: 0px;
+  }
 }
 
 @media all and (max-width: 1024px) {
@@ -261,7 +369,7 @@ code {
   .right-data {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     min-width: 200px;
@@ -332,18 +440,54 @@ code {
 }
 
 @media all and (min-width: 768px) {
-
   .precisions {
     display: flex;
-    gap: 76px;
+    gap: 5.3%;
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
   .precisions .collapse {
     margin: 0px;
-    width: calc(100% - 76px);
+    width: 94.7%;
   }
+
+  .global-description h1 {
+    font-size: 36px;
+    ;
+  }
+
+  .global-description h2 {
+    font-size: 18px;
+
+  }
+
+  .global-description h2>div {
+    line-height: 25px;
+  }
+
+  .tag {
+    font-size: 14px;
+    padding: 0px 40px;
+    border-radius: 10px;
+    height: 25px;
+  }
+
+  .star {
+    width: 30px;
+    margin-left: 10px;
+  }
+
+  .collapse .equipments li {
+    line-height: 25px;
+    margin: 0px;
+  }
+
+  .compteur {
+    bottom: 20px;
+    font-size: 18px;
+  }
+
 }
 
 @media all and (max-width: 768px) {
@@ -351,11 +495,47 @@ code {
     display: flex;
     gap: 20px;
     flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 
 
   .precisions .collapse {
     margin: 0px;
     width: 100%;
+  }
+
+  .global-description h1 {
+    font-size: 18px;
+  }
+
+  .global-description h2 {
+    font-size: 12px;
+  }
+
+  .global-description h2>div {
+    line-height: 15px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 0px 30px;
+    border-radius: 5px;
+    height: 18px;
+  }
+
+  .star {
+    width: 15px;
+    margin-left: 5px;
+  }
+
+  .collapse .equipments li {
+    line-height: 18px;
+    margin: 0px;
+  }
+
+  .compteur {
+    bottom: 10px;
+    font-size: 15px;
   }
 }

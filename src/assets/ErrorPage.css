@@ -8,14 +8,13 @@
 
 .error404 h1 {
     color: #ff6060;
-    font-size: 288px;
+    font-size: 20vw;
     margin-top: 15vh;
     margin-bottom: 10px;
 }
 
 .error404 h2 {
     color: #ff6060;
-    font-size: 36px;
     margin: 0px;
     font-weight: 400;
     margin-top: 20px;
@@ -24,11 +23,10 @@
 
 .error404 a {
     color: #ff6060;
-    font-size: 18px;
     text-decoration: underline;
 }
 
 .error404 p {
-    margin-top: 20vh;
+    margin-top: 17vh;
     margin-bottom: 20px;
 }

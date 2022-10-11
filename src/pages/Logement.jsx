@@ -26,6 +26,29 @@ const Logement = () => {
     <>
       <HeaderNav />
       <Gallery pictures={pictures} />
+      <section className="global-description">
+        <div className="logement">
+          <h1>{logement.title}</h1>
+          <h2>{logement.location}</h2>
+          <div className="tags">
+            {logement.tags.map((tag, idx) => {
+              return <Tag key={'tag_' + idx}>{tag}</Tag>
+            })}
+          </div>
+        </div>
+        <div className="right-data">
+          <div className="owner">
+            <h2>
+              <div>{names[0]}</div>
+              <div>{names[1]}</div>
+            </h2>
+            <img src={logement.host.picture} alt="host" />
+          </div>
+          <div className="stars">
+            <Stars />
+          </div>
+        </div>
+      </section>
       <section className="precisions">
         <Collapse title="Description" text={logement.description} />
         <Collapse
