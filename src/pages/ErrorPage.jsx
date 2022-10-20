@@ -4,7 +4,6 @@ import '../assets/ErrorPage.css'
 
 export default function ErrorPage() {
   const error = useRouteError()
-  console.log(error)
   return (
     <>
       <HeaderNav />

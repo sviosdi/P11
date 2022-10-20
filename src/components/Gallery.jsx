@@ -18,20 +18,22 @@ const Gallery = ({ pictures }) => {
 
   return (
     <div className="gallery">
-      <div className="chevrons">
-        <img
-          className="chevron-left"
-          onClick={previous}
-          src={leftChevron}
-          alt="chevron-left"
-        />
-        <img
-          className="chevron-right"
-          onClick={next}
-          src={rightChevron}
-          alt="chevron-rigth"
-        />
-      </div>
+      {pictures.length !== 1 && (
+        <div className="chevrons">
+          <img
+            className="chevron-left"
+            onClick={previous}
+            src={leftChevron}
+            alt="chevron-left"
+          />
+          <img
+            className="chevron-right"
+            onClick={next}
+            src={rightChevron}
+            alt="chevron-rigth"
+          />
+        </div>
+      )}
       <img className="photo" src={pictures[current]} alt="test" />
       <div className="compteur">
         {current + 1}/{pictures.length}
